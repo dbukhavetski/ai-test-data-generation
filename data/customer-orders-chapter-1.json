@@ -1,0 +1,92 @@
+[
+  {
+    "orderId": "ORD-001",
+    "customerName": "John Smith",
+    "status": "Shipped",
+    "totalAmount": 249.99
+  },
+  {
+    "orderId": "ORD-002",
+    "customerName": "Sarah Johnson",
+    "status": "Pending",
+    "totalAmount": 125.50
+  },
+  {
+    "orderId": "ORD-003",
+    "customerName": "Michael Brown",
+    "status": "Shipped",
+    "totalAmount": 599.00
+  },
+  {
+    "orderId": "ORD-004",
+    "customerName": "Emma Davis",
+    "status": "Cancelled",
+    "totalAmount": 75.25
+  },
+  {
+    "orderId": "ORD-005",
+    "customerName": "James Wilson",
+    "status": "Pending",
+    "totalAmount": 320.75
+  },
+  {
+    "orderId": "ORD-006",
+    "customerName": "Lisa Anderson",
+    "status": "Shipped",
+    "totalAmount": 450.00
+  },
+  {
+    "orderId": "ORD-007",
+    "customerName": "Robert Taylor",
+    "status": "Pending",
+    "totalAmount": 189.99
+  },
+  {
+    "orderId": "ORD-008",
+    "customerName": "Jennifer Martinez",
+    "status": "Shipped",
+    "totalAmount": 675.50
+  },
+  {
+    "orderId": "ORD-009",
+    "customerName": "David Garcia",
+    "status": "Cancelled",
+    "totalAmount": 210.00
+  },
+  {
+    "orderId": "ORD-010",
+    "customerName": "Michelle Lee",
+    "status": "Shipped",
+    "totalAmount": 542.25
+  },
+  {
+    "orderId": "ORD-011",
+    "customerName": "Christopher White",
+    "status": "Pending",
+    "totalAmount": 95.75
+  },
+  {
+    "orderId": "ORD-012",
+    "customerName": "Amanda Harris",
+    "status": "Shipped",
+    "totalAmount": 380.00
+  },
+  {
+    "orderId": "ORD-013",
+    "customerName": "Daniel Clark",
+    "status": "Pending",
+    "totalAmount": 265.50
+  },
+  {
+    "orderId": "ORD-014",
+    "customerName": "Lauren Lewis",
+    "status": "Cancelled",
+    "totalAmount": 150.00
+  },
+  {
+    "orderId": "ORD-015",
+    "customerName": "Kevin Walker",
+    "status": "Shipped",
+    "totalAmount": 725.99
+  }
+]
