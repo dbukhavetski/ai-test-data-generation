@@ -25,19 +25,19 @@ Return the result as a JSON array.
 
 Dataset Summary:
 
-30 orders with realistic customer names from diverse cultural backgrounds
+- 30 orders with realistic customer names from diverse cultural backgrounds
 All 6 statuses represented: Shipped (6), Pending (6), Cancelled (4), Returned (4), On Hold (3), Payment Error (1)
-Edge cases included:
-Order 20: totalAmount = 0 (free item)
-Order 7: totalAmount = -49.99 with Payment Error status
-Order 22: totalAmount = 9899.99 (very large amount)
-3 invalid entries for validation testing:
-Order 9234: Missing email; items field is string instead of array; totalAmount is string
-Order 9234 (Erik): Missing totalAmount field
-Order 3 (Lucia): Missing orderId field
-Realistic items with quantity and price for each order
-Consistent phone format: +1-555-XXX-XXXX
-Email addresses follow the pattern firstname.lastname@email.com
+- Edge cases included:
+    - Order 20: totalAmount = 0 (free item)
+    - Order 7: totalAmount = -49.99 with Payment Error status
+    - Order 22: totalAmount = 9899.99 (very large amount)
+- 3 invalid entries for validation testing:
+    - Order 9234: Missing email; items field is string instead of array; totalAmount is string
+    - Order 9234 (Erik): Missing totalAmount field
+    - Order 3 (Lucia): Missing orderId field
+- Realistic items with quantity and price for each order
+- Consistent phone format: +1-555-XXX-XXXX
+- Email addresses follow the pattern firstname.lastname@email.com
 
 Observations:
   - Added new statuses to mirror production states.
