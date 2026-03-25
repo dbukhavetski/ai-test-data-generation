@@ -1,0 +1,369 @@
+[
+  {
+    "orderId": 1,
+    "firstName": "Ethan",
+    "lastName": "Parker",
+    "email": "ethan.parker@email.com",
+    "phoneNumber": "+1-555-321-4567",
+    "items": [
+      {"name": "Laptop", "quantity": 1, "price": 899.99},
+      {"name": "Mouse", "quantity": 2, "price": 25.50}
+    ],
+    "status": "Shipped",
+    "totalAmount": 950.98
+  },
+  {
+    "orderId": 42,
+    "firstName": "Olivia",
+    "lastName": "Bennett",
+    "email": "olivia.bennett@email.com",
+    "phoneNumber": "+1-555-432-5678",
+    "items": [
+      {"name": "Headphones", "quantity": 1, "price": 199.99}
+    ],
+    "status": "Pending",
+    "totalAmount": 199.99
+  },
+  {
+    "orderId": 156,
+    "firstName": "Kenji",
+    "lastName": "Sato",
+    "email": "kenji.sato@email.com",
+    "phoneNumber": "+1-555-543-6789",
+    "items": [
+      {"name": "Keyboard", "quantity": 1, "price": 79.99},
+      {"name": "USB Cable", "quantity": 3, "price": 9.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 109.96
+  },
+  {
+    "orderId": 289,
+    "firstName": "Omar",
+    "lastName": "Khalil",
+    "email": "omar.khalil@email.com",
+    "phoneNumber": "+1-555-654-7890",
+    "items": [
+      {"name": "Monitor", "quantity": 1, "price": 299.99},
+      {"name": "HDMI Cable", "quantity": 2, "price": 15.99}
+    ],
+    "status": "Cancelled",
+    "totalAmount": 331.97
+  },
+  {
+    "orderId": 501,
+    "firstName": "Giulia",
+    "lastName": "Moretti",
+    "email": "giulia.moretti@email.com",
+    "phoneNumber": "+1-555-765-8901",
+    "items": [
+      {"name": "Webcam", "quantity": 1, "price": 89.99}
+    ],
+    "status": "Returned",
+    "totalAmount": 89.99
+  },
+  {
+    "orderId": 723,
+    "firstName": "Wei",
+    "lastName": "Zhang",
+    "email": "wei.zhang@email.com",
+    "phoneNumber": "+1-555-876-9012",
+    "items": [
+      {"name": "Desk Lamp", "quantity": 1, "price": 45.99},
+      {"name": "Desk Organizer", "quantity": 2, "price": 19.99}
+    ],
+    "status": "On Hold",
+    "totalAmount": 85.97
+  },
+  {
+    "orderId": 918,
+    "firstName": "Nikolai",
+    "lastName": "Orlov",
+    "email": "nikolai.orlov@email.com",
+    "phoneNumber": "+1-555-987-0123",
+    "items": [
+      {"name": "Graphics Card", "quantity": 1, "price": 499.99}
+    ],
+    "status": "Payment Error",
+    "totalAmount": -49.99
+  },
+  {
+    "orderId": 1234,
+    "firstName": "Zuri",
+    "lastName": "Adeyemi",
+    "email": "zuri.adeyemi@email.com",
+    "phoneNumber": "+1-555-198-1234",
+    "items": [
+      {"name": "Mechanical Keyboard", "quantity": 1, "price": 159.99},
+      {"name": "Keycap Set", "quantity": 1, "price": 49.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 209.98
+  },
+  {
+    "orderId": 2001,
+    "firstName": "Erik",
+    "lastName": "Lindberg",
+    "email": "erik.lindberg@email.com",
+    "phoneNumber": "+1-555-209-2345",
+    "items": [
+      {"name": "Standing Desk", "quantity": 1, "price": 399.99},
+      {"name": "Desk Mat", "quantity": 1, "price": 35.99}
+    ],
+    "status": "Pending",
+    "totalAmount": 435.98
+  },
+  {
+    "orderId": 2567,
+    "firstName": "Camila",
+    "lastName": "Ortega",
+    "email": "camila.ortega@email.com",
+    "phoneNumber": "+1-555-310-3456",
+    "items": [
+      {"name": "Ergonomic Chair", "quantity": 1, "price": 299.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 299.99
+  },
+  {
+    "orderId": 3142,
+    "firstName": "Arjun",
+    "lastName": "Mehta",
+    "email": "arjun.mehta@email.com",
+    "phoneNumber": "+1-555-421-4568",
+    "items": [
+      {"name": "USB Hub", "quantity": 2, "price": 24.99},
+      {"name": "Surge Protector", "quantity": 1, "price": 19.99}
+    ],
+    "status": "Cancelled",
+    "totalAmount": 69.97
+  },
+  {
+    "orderId": 3899,
+    "firstName": "Valentina",
+    "lastName": "Marino",
+    "email": "valentina.marino@email.com",
+    "phoneNumber": "+1-555-532-5679",
+    "items": [
+      {"name": "External SSD", "quantity": 1, "price": 129.99}
+    ],
+    "status": "Returned",
+    "totalAmount": 129.99
+  },
+  {
+    "orderId": 4521,
+    "firstName": "Diego",
+    "lastName": "Ferreira",
+    "email": "diego.ferreira@email.com",
+    "phoneNumber": "+1-555-643-6790",
+    "items": [
+      {"name": "Smartphone", "quantity": 1, "price": 799.99},
+      {"name": "Phone Case", "quantity": 1, "price": 24.99}
+    ],
+    "status": "Pending",
+    "totalAmount": 824.98
+  },
+  {
+    "orderId": 5234,
+    "firstName": "Minji",
+    "lastName": "Park",
+    "email": "minji.park@email.com",
+    "phoneNumber": "+1-555-754-7891",
+    "items": [
+      {"name": "Tablet", "quantity": 1, "price": 449.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 449.99
+  },
+  {
+    "orderId": 6001,
+    "firstName": "Luca",
+    "lastName": "Bianchi",
+    "email": "luca.bianchi@email.com",
+    "phoneNumber": "+1-555-865-8902",
+    "items": [
+      {"name": "Smartwatch", "quantity": 1, "price": 299.99},
+      {"name": "Watch Band", "quantity": 2, "price": 19.99}
+    ],
+    "status": "On Hold",
+    "totalAmount": 339.97
+  },
+  {
+    "orderId": 6778,
+    "firstName": "Anika",
+    "lastName": "Desai",
+    "email": "anika.desai@email.com",
+    "phoneNumber": "+1-555-976-9013",
+    "items": [
+      {"name": "Notebook", "quantity": 5, "price": 12.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 64.95
+  },
+  {
+    "orderId": 7321,
+    "firstName": "Greta",
+    "lastName": "Hoffmann",
+    "email": "greta.hoffmann@email.com",
+    "phoneNumber": "+1-555-187-0124",
+    "items": [
+      {"name": "Pen Set", "quantity": 1, "price": 35.99}
+    ],
+    "status": "Cancelled",
+    "totalAmount": 35.99
+  },
+  {
+    "orderId": 8045,
+    "firstName": "Ren",
+    "lastName": "Ito",
+    "email": "ren.ito@email.com",
+    "phoneNumber": "+1-555-298-1235",
+    "items": [
+      {"name": "Desk Shelf", "quantity": 1, "price": 89.99}
+    ],
+    "status": "Returned",
+    "totalAmount": 89.99
+  },
+  {
+    "orderId": 8912,
+    "firstName": "Marta",
+    "lastName": "Zielinska",
+    "email": "marta.zielinska@email.com",
+    "phoneNumber": "+1-555-309-2346",
+    "items": [
+      {"name": "Laptop Stand", "quantity": 1, "price": 49.99},
+      {"name": "Cooling Pad", "quantity": 1, "price": 59.99}
+    ],
+    "status": "Pending",
+    "totalAmount": 109.98
+  },
+  {
+    "orderId": 9567,
+    "firstName": "Thiago",
+    "lastName": "Costa",
+    "email": "thiago.costa@email.com",
+    "phoneNumber": "+1-555-410-3457",
+    "items": [
+      {"name": "Gaming Console", "quantity": 1, "price": 499.99},
+      {"name": "Gaming Headset", "quantity": 1, "price": 99.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 599.98
+  },
+  {
+    "orderId": 0,
+    "firstName": "Petra",
+    "lastName": "Vesela",
+    "email": "petra.vesela@email.com",
+    "phoneNumber": "+1-555-521-4569",
+    "items": [
+      {"name": "Monitor Stand", "quantity": 1, "price": 0.00}
+    ],
+    "status": "Shipped",
+    "totalAmount": 0
+  },
+  {
+    "orderId": 2845,
+    "firstName": "Javier",
+    "lastName": "Salazar",
+    "email": "javier.salazar@email.com",
+    "phoneNumber": "+1-555-632-5680",
+    "items": [
+      {"name": "Pro Display", "quantity": 1, "price": 4999.99},
+      {"name": "Cable Kit", "quantity": 1, "price": 199.99}
+    ],
+    "status": "Pending",
+    "totalAmount": 5199.98
+  },
+  {
+    "orderId": 4356,
+    "firstName": "Alicja",
+    "lastName": "Nowak",
+    "email": "alicja.nowak@email.com",
+    "phoneNumber": "+1-555-743-6791",
+    "items": [
+      {"name": "Server Rack", "quantity": 1, "price": 9899.99}
+    ],
+    "status": "On Hold",
+    "totalAmount": 9899.99
+  },
+  {
+    "orderId": 5678,
+    "firstName": "Caleb",
+    "lastName": "Morgan",
+    "email": "caleb.morgan@email.com",
+    "phoneNumber": "+1-555-854-7892",
+    "items": [
+      {"name": "Printer", "quantity": 1, "price": 349.99}
+    ],
+    "status": "Cancelled",
+    "totalAmount": 349.99
+  },
+  {
+    "orderId": 7123,
+    "firstName": "Miriam",
+    "lastName": "Cohen",
+    "email": "miriam.cohen@email.com",
+    "phoneNumber": "+1-555-965-8903",
+    "items": [
+      {"name": "Scanner", "quantity": 1, "price": 299.99}
+    ],
+    "status": "Returned",
+    "totalAmount": 299.99
+  },
+  {
+    "orderId": 8456,
+    "firstName": "Andres",
+    "lastName": "Navarro",
+    "email": "andres.navarro@email.com",
+    "phoneNumber": "+1-555-176-9014",
+    "items": [
+      {"name": "Projector", "quantity": 1, "price": 749.99}
+    ],
+    "status": "Shipped",
+    "totalAmount": 749.99
+  },
+  {
+    "orderId": 9234,
+    "firstName": "Layla",
+    "lastName": "Faris",
+    "phoneNumber": "+1-555-287-0125",
+    "items": "Invalid items type",
+    "status": "Pending",
+    "totalAmount": "Not a number"
+  },
+  {
+    "orderId": "Invalid ID",
+    "firstName": "Oskar",
+    "lastName": "Nyberg",
+    "email": "oskar.nyberg@email.com",
+    "phoneNumber": "+1-555-398-1236",
+    "items": [
+      {"name": "Desk", "quantity": 1, "price": 599.99}
+    ],
+    "status": "Shipped"
+  },
+  {
+    "firstName": "Serena",
+    "lastName": "Romano",
+    "email": "serena.romano@email.com",
+    "phoneNumber": "+1-555-409-2347",
+    "items": [
+      {"name": "Chair", "quantity": 1, "price": 499.99}
+    ],
+    "status": "Cancelled",
+    "totalAmount": 499.99
+  },
+  {
+    "orderId": 3567,
+    "firstName": "Daniel",
+    "lastName": "Mizrahi",
+    "email": "daniel.mizrahi@email.com",
+    "phoneNumber": "+1-555-520-3458",
+    "items": [
+      {"name": "Cabinet", "quantity": 2, "price": 199.99}
+    ],
+    "status": "Returned",
+    "totalAmount": 399.98
+  }
+]

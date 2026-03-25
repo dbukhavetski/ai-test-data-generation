@@ -44,3 +44,20 @@ Observations:
   - Introduced invalid rows for validation testing.
   - Each record now includes contact details and an items array.
   - The data summary contains inconsistencies. The sum of the status values does not equal 30. It is unclear what the section regarding the order refers to. The first section uses the product number, while the second uses the order ID.
+## Chapter 3 – Data Masking and Validation
+Prompt used:
+"
+Mask PII in the dataset:
+- Replace customerName, email, and phoneNumber with synthetic but realistic values.
+- Keep orderId, status, totalAmount, and items unchanged.
+- Preserve types and overall structure.
+- Output as JSON in the same schema.
+"
+
+Checks performed:
+- All masked fields preserve type and basic format.
+- No record lost required keys.
+- Items arrays are intact with expected fields.
+- Validation confirmed schema consistency.
+- I looked through the changes. It didn't touch any fields except for firstName, lastNmae, email and phoneNumber
+![alt text](image.png)
