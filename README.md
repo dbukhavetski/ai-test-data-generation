@@ -61,3 +61,87 @@ Checks performed:
 - Validation confirmed schema consistency.
 - I looked through the changes. It didn't touch any fields except for firstName, lastNmae, email and phoneNumber
 ![alt text](image.png)
+## Chapter 4 – Integrating AI-Generated Data into Validation Workflows
+Result:
+
+  1) tests\post-echo.spec.js:10:7 › Echo validates order 918 ───────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 0
+    Received:    -49.99
+
+      32 |
+      33 |     expect(record.email).toMatch(/^[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}$/);
+    > 34 |     expect(record.totalAmount).toBeGreaterThanOrEqual(0);
+         |                                ^
+      35 |     expect(Array.isArray(record.items)).toBeTruthy();
+      36 |     expect(record.items.length).toBeGreaterThan(0);
+      37 |
+        at C:\Users\d.bukhavetski\Work\ai-test-data-generation\tests\post-echo.spec.js:34:32
+
+  2) tests\post-echo.spec.js:10:7 › Echo validates order 9234 ──────────────────────────────────────
+
+    Error: expect(received).toHaveProperty(path)
+
+    Expected path: "email"
+    Received path: []
+
+    Received value: {"firstName": "Layla", "items": "Invalid items type", "lastName": "Faris", "orderId": 9234, "phoneNumber": "+1-555-287-0125", "status": "Pending", "totalAmount": "Not a number"}
+
+      20 |     // --- Structural checks ---
+      21 |     const requiredKeys = ["orderId","firstName","lastName","email","phoneNumber","status","totalAmount","items"];
+    > 22 |     for (const key of requiredKeys) expect(record).toHaveProperty(key);
+         |                                                    ^
+      23 |
+      24 |     // --- Type checks (apply to all records) ---
+      25 |     expect(typeof record.orderId).toBe("number");
+        at C:\Users\d.bukhavetski\Work\ai-test-data-generation\tests\post-echo.spec.js:22:52
+
+  3) tests\post-echo.spec.js:10:7 › Echo validates order Invalid ID ────────────────────────────────
+
+    Error: expect(received).toHaveProperty(path)
+
+    Expected path: "totalAmount"
+    Received path: []
+
+    Received value: {"email": "oskar.nyberg@email.com", "firstName": "Oskar", "items": [{"name": "Desk", "price": 599.99, "quantity": 1}], "lastName": "Nyberg", "orderId": "Invalid ID", "phoneNumber": "+1-555-398-1236", "status": "Shipped"}
+
+      20 |     // --- Structural checks ---
+      21 |     const requiredKeys = ["orderId","firstName","lastName","email","phoneNumber","status","totalAmount","items"];
+    > 22 |     for (const key of requiredKeys) expect(record).toHaveProperty(key);
+         |                                                    ^
+      23 |
+      24 |     // --- Type checks (apply to all records) ---
+      25 |     expect(typeof record.orderId).toBe("number");
+        at C:\Users\d.bukhavetski\Work\ai-test-data-generation\tests\post-echo.spec.js:22:52
+
+  4) tests\post-echo.spec.js:10:7 › Echo validates order undefined ─────────────────────────────────
+
+    Error: expect(received).toHaveProperty(path)
+
+    Expected path: "orderId"
+    Received path: []
+
+    Received value: {"email": "serena.romano@email.com", "firstName": "Serena", "items": [{"name": "Chair", "price": 499.99, "quantity": 1}], "lastName": "Romano", "phoneNumber": "+1-555-409-2347", "status": "Cancelled", "totalAmount": 499.99}
+
+      20 |     // --- Structural checks ---
+      21 |     const requiredKeys = ["orderId","firstName","lastName","email","phoneNumber","status","totalAmount","items"];
+    > 22 |     for (const key of requiredKeys) expect(record).toHaveProperty(key);
+         |                                                    ^
+      23 |
+      24 |     // --- Type checks (apply to all records) ---
+      25 |     expect(typeof record.orderId).toBe("number");
+        at C:\Users\d.bukhavetski\Work\ai-test-data-generation\tests\post-echo.spec.js:22:52
+
+4 failed:
+  - tests\post-echo.spec.js:10:7 › Echo validates order 918
+  - tests\post-echo.spec.js:10:7 › Echo validates order 9234
+  - tests\post-echo.spec.js:10:7 › Echo validates order Invalid ID
+  - tests\post-echo.spec.js:10:7 › Echo validates order undefined
+
+26 passed (10.3s)
+
+
+Summary:
+4 failed tests. 3 of them are missing fields. The last one has negative amount
