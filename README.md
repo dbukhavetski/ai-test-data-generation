@@ -145,3 +145,29 @@ Result:
 
 Summary:
 4 failed tests. 3 of them are missing fields. The last one has negative amount
+
+## Chapter 5 – AI Data Quality Report
+Validation source: Playwright against `data/customer-orders-chapter-3-masked.json`
+
+Key metrics:
+- Total records tested: 30
+- Valid records: 26
+- Invalid records: 4
+- Pass rate: 86.7%
+- Status coverage: all 6 expected statuses present
+- Duplicate order IDs: 0
+
+Primary issues detected:
+- Missing required fields: 3 records impacted (`orderId`, `email`, `totalAmount`)
+- Type mismatches: 2 fields impacted (`orderId`, `totalAmount`)
+- Invalid `items` structure: 1 record
+- Business rule violation: 1 negative `totalAmount`
+
+Assessment:
+- The generation pipeline produces strong coverage and realistic variety, but it mixes production-like records with deliberately invalid cases in the same output.
+- Schema quality is the main failure mode; masking did not introduce additional format errors.
+
+Recommendations:
+1. Split output into `valid` and `negative-test` datasets so validation runs can target the intended quality bar.
+2. Add an automated schema gate before masking or API submission to reject missing fields, wrong types, and malformed `items` payloads.
+3. Tighten the generation prompt with explicit constraints: all required keys present, numeric fields must remain numbers, and invalid cases must be tagged rather than mixed into the main dataset.
